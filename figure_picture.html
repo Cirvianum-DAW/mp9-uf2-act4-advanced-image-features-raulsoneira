@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemple de figure i figcaption</title>
+    <style>
+      /* Estils per a la imatge */
+      figure {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      img {
+        width: 300px;
+        height: auto;
+        border: 2px solid #333;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Estils per al subtítol */
+      figcaption {
+        margin-top: 10px;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <figure>
+      <picture>
+        <source media="(min-width: 800px)" srcset="img/lamborghini_large.jpg" />
+        <source
+          media="(min-width: 400px)"
+          srcset="img/lamborghini_medium.jpg"
+        />
+        <img src="img/lamborghini_small.jpg" alt="Descripció de la imatge" />
+      </picture>
+      <figcaption>Títol de la imatge</figcaption>
+    </figure>
+
+    <p>
+      The figure element is used to encapsulate any content considered an
+      independent unit, such as images, graphics, diagrams, photographs, code,
+      etc. The figcaption element is used within the figure element to provide a
+      caption or subtitle to this encapsulated content. This helps provide
+      context or additional information about the figure.
+    </p>
+  </body>
+</html>
