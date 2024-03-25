@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The map and area elements</title>
+    <style>
+      img {
+        max-width: 100%; /* Defineix la mida màxima de la imatge com el 100% de l'ample de l'element pare */
+        height: auto; /* Assegura que l'alçada s'ajusti automàticament per mantenir la proporció de l'imatge */
+        display: block; /* Assegura que l'element s'ajusti correctament en el flux de la pàgina */
+        margin: 0 auto; /* Centra la imatge horitzontalment */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The map and area elements</h1>
+
+    <img src="img/provincies-de-catalunya.jpg" usemap="#map" />
+
+    <map name="map">
+      <!-- #$-:Image map file created by GIMP Image Map plug-in -->
+      <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+      <!-- #$-:Please do not edit lines starting with "#$" -->
+      <!-- #$VERSION:2.3 -->
+      <!-- #$AUTHOR:Raul Soneria -->
+      <area shape="rect" coords="241,191,437,511" href="lleida.html" />
+      <area shape="circle" coords="179,811,123" href="tarragona.html" />
+      <area shape="circle" coords="903,361,127" href="girona.html" />
+      <area shape="circle" coords="559,472,146" href="barcelona.html" />
+    </map>
+
+    <p>
+      Adding the CSS property <code>max-width</code> to images automatically
+      resizes them to fit the width of the parent element without exceeding
+      their original size. This is useful for large images displayed on smaller
+      devices such as mobile phones or tablets, ensuring that the image will be
+      fully visible without requiring horizontal scrolling.
+    </p>
+  </body>
+</html>

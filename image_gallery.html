@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lightbox2 Example</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+    />
+    <style>
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 10px;
+      }
+
+      .image-grid img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lightbox2 Example</h1>
+    <div class="image-grid">
+      <a
+        href="img/Barcelona-Blog-de-Renfe-4.jpg"
+        data-lightbox="example-set"
+        data-title="Barcelona"
+        ><img src="img/Barcelona-Blog-de-Renfe-4.jpg" alt="Barcelona"
+      /></a>
+      <a href="img/lleida.avif" data-lightbox="example-set" data-title="Lleida"
+        ><img src="img/lleida.avif" alt="Lleida"
+      /></a>
+      <a href="img/girona.jpg" data-lightbox="example-set" data-title="Girona"
+        ><img src="img/girona.jpg" alt="Girona"
+      /></a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script>
+      lightbox.option({
+        resizeDuration: 200,
+        wrapAround: true,
+      });
+    </script>
+  </body>
+</html>

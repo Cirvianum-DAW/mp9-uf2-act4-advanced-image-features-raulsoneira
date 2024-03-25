@@ -1,0 +1,13 @@
+<img src="[provincies-de-catalunya] (importada)" width="1080" height="1075" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Raul Soneria -->
+<area shape="rect" coords="241,191,437,511" href="lleida.html" />
+<area shape="circle" coords="179,811,123" href="tarragona.html" />
+<area shape="circle" coords="903,361,127" href="giron.html" />
+<area shape="circle" coords="559,472,146" href="barcelona.html" />
+</map>
