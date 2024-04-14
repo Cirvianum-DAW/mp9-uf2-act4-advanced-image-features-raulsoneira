@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My Project</title>
+    <title>Act2.5 - Vector Images Mides</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <script src="js/script.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <style>
+      
+      /* Estils per al fons */
+      body {
+        background-image: url("/img/Fons.png");
+        background-size: cover; /* Ajusta la imatge de fons per cobrir tota la pantalla */
+        background-repeat: no-repeat;
+      }
+    </style>
   </head>
   <body>
     <header class="bg-blue-500 text-white text-center p-5">
-      <h1 class="text-4xl">Image Format Experiment</h1>
+      <h1 class="text-4xl">Vector Images</h1>
       <nav class="mt-4">
         <div class="text-center mt-5">
           <a
             href="basic_image.html"
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-            >Ex1 i Ex2</a
+            >Ex1 and Ex2</a
           >
           <a
             href="resolution_switching.html"
@@ -27,7 +36,7 @@
           <a
             href="image_alignment.html"
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-            >Ex4 i Ex5</a
+            >Ex4 and Ex5</a
           >
           <a
             href="image_gallery.html"
@@ -37,7 +46,7 @@
           <a
             href="figure_picture.html"
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-            >Ex7 i Ex8</a
+            >Ex7 and Ex8</a
           >
           <a
             href="VectorImatges.html"
@@ -52,49 +61,20 @@
         </div>
       </nav>
     </header>
+    <!-- Imatge de la palmera sense definir mida -->
+    <img src="/img/Palmera_Blava.png" alt="Palmera" />
 
-    <h1>Exercise 1: Basic Image Insertion</h1>
-    <img
-      src="img/gratisography-cyber-kitty.jpg"
-      alt="Brief description of the image"
-    />
-    <p>
-      <b
-        >Why is the `alt` attribute important for images? Write a brief
-        explanation in the HTML file.</b
-      >
+    <!-- Imatge de la palmera amb mida 150x150px -->
+    <img src="/img/Palmera_Blava.png" alt="Palmera" width="150" height="150" />
 
-      In summary, the alt attribute improves the comprehensibility,
-      accessibility, and user experience on a web page.
-    </p>
+    <!-- Imatge del logo incrustada amb SVG sense definir mida -->
+    <svg width="100" height="100">
+      <image href="logos.eps.svg" width="100" height="100" />
+    </svg>
 
-    <h1>Examples of Images in Modern Formats</h1>
-    <h2>Image in WEBP format</h2>
-    <img
-      src="img/foodiesfeed.com_strawberry-milk-splash.webp"
-      alt="Image in WEBP format"
-      width="300"
-      height="200"
-    />
-    <p>This is an image in WEBP format.</p>
-
-    <h2>Image in AVIF format</h2>
-    <img
-      src="img/foodiesfeed.com_pouring-honey-on-pancakes.avif"
-      alt="Image in AVIF format"
-      width="400"
-      height="250"
-    />
-    <p>This is an image in AVIF format.</p>
-
-    <h3>Explanation about the width and height attributes:</h3>
-    <p>
-      The "width" and "height" attributes are used to control the dimensions of
-      the image on the web page. These attributes do not change the actual size
-      of the image file, but only affect how the image is displayed in the
-      browser. If different dimensions are specified from the actual dimensions
-      of the image, the image may be distorted or stretched to fit the specified
-      values.
-    </p>
+    <!-- Imatge del logo incrustada amb SVG amb mida 150x150px -->
+    <svg width="150" height="150">
+      <image href="logos.eps.svg" width="150" height="150" />
+    </svg>
   </body>
 </html>
