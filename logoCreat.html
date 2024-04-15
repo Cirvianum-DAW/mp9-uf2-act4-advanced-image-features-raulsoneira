@@ -1,25 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Act2.5 - Vector Images Mides</title>
+    <title>Act2.5 - Logo</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <script src="js/script.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <style>
-      /* Estils per al fons */
-      body {
-        background-image: url("/img/Fons.png");
-        background-size: cover; /* Ajusta la imatge de fons per cobrir tota la pantalla */
-        background-repeat: no-repeat;
-      }
-    </style>
   </head>
   <body>
     <header class="bg-blue-500 text-white text-center p-5">
-      <h1 class="text-4xl">Vector Images</h1>
+      <h1 class="text-4xl">Logo</h1>
       <nav class="mt-4">
         <div class="text-center mt-5">
           <a
@@ -58,27 +50,27 @@
             >Palmera i Logo Mides</a
           >
           <a
-            href="logoCreat.html"
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-            >Logo</a
-          >
+          href="logoCreat.html"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >Logo</a
+        >
         </div>
       </nav>
     </header>
-    <!-- Imatge de la palmera sense definir mida -->
-    <img src="/img/Palmera_Blava.png" alt="Palmera" />
 
-    <!-- Imatge de la palmera amb mida 150x150px -->
-    <img src="/img/Palmera_Blava.png" alt="Palmera" width="150" height="150" />
-
-    <!-- Imatge del logo incrustada amb SVG sense definir mida -->
-    <svg width="100" height="100">
-      <image href="logos.eps.svg" width="100" height="100" />
-    </svg>
-
-    <!-- Imatge del logo incrustada amb SVG amb mida 150x150px -->
-    <svg width="150" height="150">
-      <image href="logos.eps.svg" width="150" height="150" />
-    </svg>
+    <main class="max-w-4xl mx-auto mt-8 px-4">
+      <h1 class="text-2xl font-bold mb-4">
+        Exercise 3: Using the Logo Image
+      </h1>
+      <p class="mb-4">
+        This is my created logo
+      </p>
+      <img
+        src="/img/Logo_Creat.png"
+        alt=""
+        class="mx-auto mb-4"
+        style="max-width: 80%; height: auto"
+      />
+    </main>
   </body>
 </html>
